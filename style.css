@@ -10,9 +10,14 @@ body {
     padding: 15px;
 }
 
-.header_view__container span { 
+.header_view__container > span { 
     font-family: "Arial", sans-serif;
     font-size: 13px;
+    color: #5f6368;
+}
+
+.header_view__container a {
+    text-decoration: none;
     color: #5f6368;
 }
 
@@ -21,7 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    gap: 10px;
+    gap: 30px;
     padding: 15px;
     margin-top: 60px;
 }
@@ -38,25 +43,25 @@ body {
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     padding-left: 45px;
+    font-size: 18px;
 }
 
 .search_view__container input::placeholder {
-    padding-left: 0;
     font-size: 16px;
     color: #9aa0a6;
 }
 
-.search_view__container .search_view__column:nth-child(2) {
+.search_view_input_container {
     position: relative;
 }
 
-.search_view__container .search_view__column i {
+.search_view__container i {
     position: absolute;
     top: 15px;
     left: 20px;
 }
 
-.search_button__container {
+.search_link__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,31 +93,27 @@ body {
     background-color: #dfe1e5; /* 버튼 클릭 시 배경색 변경 */
 }
 
-.search_button__column {
+.search_button_item {
    margin-top: 20px;
    display:flex;
    flex-direction: column;
    align-items: center;
+   gap: 10px;
 }
 
-.search_button__column span {
+.search_button_item span {
     font-family: "Arial", sans-serif;
     font-size: 13px;
     color: #5f6368;
-    margin-top: 10px;
-}
-
-.bottom_view__container {
-   position: fixed;
-   bottom: 10px;
-   right: -20px;    
-   box-sizing: border-box;
-   padding: 10px;
-   width: 220px;
 }
 
 .bottom_view__button {
-    width: 80%;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;    
+    box-sizing: border-box;
+    padding: 10px;
+    width: 150px;
     height: 30px;
     background-color: #d6e3ff;
     color: black;
