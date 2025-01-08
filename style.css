@@ -1,0 +1,133 @@
+@import "reset.css";
+
+body {
+    background: rgb(249, 249, 255);
+}
+
+.header_view__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.header_view__container > span { 
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    color: #5f6368;
+}
+
+.header_view__container a {
+    text-decoration: none;
+    color: #5f6368;
+}
+
+.search_view__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+.search_view__container img {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 20px;
+}
+
+.search_view__container input {
+    width: 584px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding-left: 45px;
+    font-size: 18px;
+}
+
+.search_view__container input::placeholder {
+    font-size: 16px;
+    color: #9aa0a6;
+}
+
+.search_view_input_container {
+    position: relative;
+}
+
+.search_view__container i {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.search_link__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.circle-button {
+    width: 50px; /* 버튼의 너비 */
+    height: 50px; /* 버튼의 높이 (너비와 같아야 원형) */
+    background-color: #dfe1e5; /* 버튼 배경색 */
+    color: white; /* 버튼 글자색 */
+    border: none; /* 버튼 테두리 제거 */
+    border-radius: 50%; /* 원형을 만들기 위한 설정 */
+    display: flex; /* 중앙 정렬을 위한 설정 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    font-size: 16px; /* 글자 크기 */
+    cursor: pointer; /* 마우스 커서 스타일 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    transition: background-color 0.3s ease; /* 색상 전환 효과 */
+    margin-bottom: 15px;
+}
+
+.circle-button:hover {
+    background-color: #dfe1e5; /* 마우스 오버 시 배경색 변경 */
+}
+
+.circle-button:active {
+    background-color: #dfe1e5; /* 버튼 클릭 시 배경색 변경 */
+}
+
+.search_button_item {
+   margin-top: 20px;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+
+.search_button_item span {
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    color: #5f6368;
+}
+
+.bottom_view__button {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;    
+    box-sizing: border-box;
+    padding: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: #d6e3ff;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px; 
+}
+
+.bottom_view__button i {
+    margin-left: 5px; 
+}
